@@ -22,9 +22,10 @@ const FilterObject = () => {
 
     const onClickHandler = () => {
         const filter = [];
-        unFilteredArray.forEach(el => el.el.forEach(item => {
-            console.log(item);
-        }))
+        unFilteredArray.map(el => {
+            el.hasOwnProperty(userInput) && filter.push(el)
+        })
+        setFilteredArray(filter)
     }
 
 
