@@ -1,8 +1,11 @@
+import TopicBrowser from "./components/TopicBrowser/TopicBrowser";
 
 
 function App() {
   return (
-    <div>Replace this whole div!</div>
+    <div>
+      <TopicBrowser />
+    </div>
   );
 }
 
